@@ -477,3 +477,94 @@ summary {
     color: #1b4332;
     font-size: 2rem;
 }
+.badge {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+.service-card {
+    transition: all 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* يرفع البطاقة للأعلى قليلاً */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* يضيف ظل عميق */
+}
+/* دعم الشفافية الضبابية */
+.navbar {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* لمتصفحات أبل */
+}
+/* حاوية الزر لتوسيطه */
+.whatsapp-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* تصميم الزر المطور */
+.whatsapp-btn-modern {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #25d366; /* لون الواتساب الرسمي */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* تأثير التمرير ( Hover ) */
+.whatsapp-btn-modern:hover {
+    transform: scale(1.05); /* تكبير بسيط */
+    background-color: #1ebe57;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+    color: white;
+}
+
+/* أيقونة الواتساب */
+.whatsapp-btn-modern i {
+    font-size: 24px;
+}
+
+/* تأثير النبض الجمالي ( Animation ) */
+.whatsapp-btn-modern::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    border-radius: 50px;
+    animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+        transform: scale(0.95);
+        opacity: 0.7;
+    }
+    70% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+}
