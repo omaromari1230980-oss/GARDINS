@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>الأسئلة</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+<h1>🌿 Gardens</h1>
+</nav>
+
+<div class="faq-section">
+    <details>
+        <summary>ما هي الخدمات التي تقدمها جاردنز؟</summary>
+        <p>نحن نوفر صناديق زراعية متكاملة ونصائح احترافية لتنسيق الحدائق المنزلية.</p>
+    </details>
+    <details>
+        <summary>هل تتوفر خدمة التوصيل؟</summary>
+        <p>نعم، نقوم بالتوصيل لكافة مناطق المملكة مع ضمان سلامة النباتات.</p>
+    </details>
+</div>
+
+<footer>© Gardens</footer>
+<button id="topBtn" onclick="scrollToTop()">⬆</button>
+
+<script>
+window.onscroll = function() {
+document.getElementById("topBtn").style.display =
+window.scrollY > 300 ? "block" : "none";
+}
+
+function scrollToTop() {
+window.scrollTo({top: 0, behavior: "smooth"});
+}
+</script>
+</body>
+</html>

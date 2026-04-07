@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>من نحن</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+<h1>🌿 Gardens</h1>
+</nav>
+<button id="topBtn" onclick="scrollToTop()">⬆</button>
+
+<script>
+window.onscroll = function() {
+document.getElementById("topBtn").style.display =
+window.scrollY > 300 ? "block" : "none";
+}
+
+function scrollToTop() {
+window.scrollTo({top: 0, behavior: "smooth"});
+}
+</script>
+<section>
+<h2>من نحن</h2>
+<p>نحن شركة متخصصة في تقديم خدمات البستنة والصناديق الزراعية.</p>
+</section>
+<section class="faq-section">
+    <div class="container">
+        <h2 class="section-title">الأسئلة الشائعة</h2>
+        <div class="faq-container">
+            <details>
+                <summary>ما هي الخدمات التي تقدمها جاردنز؟ <i class="fas fa-chevron-down"></i></summary>
+                <div class="faq-answer">
+                    <p>نحن نقدم صناديق زراعية متكاملة، استشارات لتنسيق الحدائق، وصيانة دورية للنباتات المنزلية.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>هل توفرون خدمة التوصيل للمنازل؟ <i class="fas fa-chevron-down"></i></summary>
+                <div class="faq-answer">
+                    <p>نعم، خدمة التوصيل متاحة لجميع المناطق مع ضمان وصول النباتات بحالة ممتازة.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>كيف يمكنني طلب صندوق زراعي مخصص؟ <i class="fas fa-chevron-down"></i></summary>
+                <div class="faq-answer">
+                    <p>يمكنك التواصل معنا عبر صفحة "تواصل معنا" وتحديد أنواع النباتات والمساحة المتوفرة لديك.</p>
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+<footer>© Gardens</footer>
+
+</body>
+</html>
